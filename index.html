@@ -1,0 +1,133 @@
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Video List Player Widget Responsive Website Template | Home :: w3layouts</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Video List Player Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<!-- //js -->
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<!-- main -->
+<div class="video-main">
+	<h1>Video List Player Widget</h1>
+	<div class="video-record-list">
+		<div id="jp_container_1" class="jp-video jp-video-270p" role="application" aria-label="media player">
+			<div class="jp-type-playlist">
+				<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+				<div class="jp-gui">
+					<div class="jp-video-play">
+						<button class="jp-video-play-icon" role="button" tabindex="0">play</button>
+					</div>
+					<div class="jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+						<div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+						<div class="jp-controls-holder">
+							<div class="jp-controls">
+								<button class="jp-previous" role="button" tabindex="0">previous</button>
+								<button class="jp-play" role="button" tabindex="0">play</button>
+							</div>
+							<div class="jp-volume-controls">
+								<button class="jp-mute" role="button" tabindex="0">mute</button>
+								<button class="jp-volume-max" role="button" tabindex="0">max volume</button>
+								<div class="jp-volume-bar">
+									<div class="jp-volume-bar-value"></div>
+								</div>
+							</div>
+							<div class="jp-toggles">
+							
+								<button class="jp-full-screen" role="button" tabindex="0">full screen</button>
+							</div>
+						</div>
+						<div class="jp-details">
+							<div class="jp-title" aria-label="title">&nbsp;</div>
+						</div>
+					</div>
+				</div>
+				<div class="jp-playlist">
+					<ul>
+						<!-- The method Playlist.displayPlaylist() uses this unordered list -->
+						<li>&nbsp;</li>
+					</ul>
+				</div>
+				<div class="jp-no-solution">
+					<span>Update Required</span>
+					To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="copy-right">
+			<p> &copy; 2015 Video List Player Widget. All Rights Reserved | Design by  <a href="http://w3layouts.com/"> W3layouts</a></p>
+		</div>
+	</div>
+</div>
+<!-- //main -->
+<!-- script for play-list -->
+<link href="css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function(){
+
+	new jPlayerPlaylist({
+		jPlayer: "#jquery_jplayer_1",
+		cssSelectorAncestor: "#jp_container_1"
+	}, [
+		
+		{
+			title:"Exquisite handwriting exercises",
+			artist:"cmy",
+			webmv: "mp4/1.webm",
+			poster: "image/1.jpg"
+		},
+		{
+			title:"laugh heartily",
+			artist:"cmy",
+			webmv: "mp4/2.webm",
+			poster: "image/2.jpg"
+		},
+		{
+			title:"heavely sound",
+			artist:"cmy",
+			webmv: "mp4/3.webm",
+			poster: "image/3.jpg"
+		}
+	], {
+		swfPath: "../../dist/jplayer",
+		supplied: "webmv, ogv, m4v",
+		useStateClassSkin: true,
+		autoBlur: false,
+		smoothPlayBar: true,
+		keyEnabled: true
+	});
+
+});
+//]]>
+</script>
+<!-- //script for play-list -->
+</body>
+</html>
